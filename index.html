@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Trivia Game</title>
+
+		<!-- Link in CSS Files -->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+
+		<!-- Start of the game -->
+		<div id = start_container>
+			<!-- Game Logo -->
+			<h1 class = "logo">Taekwondo Trivia</h1>
+
+			<button id = start_button>Start! Hi-Yahhh</button>
+		</div>
+
+		<!-- Game content container -->
+		<div id = game_content>
+			<!-- Trivia Game Logo -->
+			<h1 class = "logo">Taekwondo Trivia</h1>
+
+			<!-- Game Timer -->
+			<h1 id = "timer_line">Time Remaining: <span id = "timer_number">60 Seconds</span></h1>
+
+			<!-- Game Questions -->
+
+			<h1>1. Dobuk means?</h1>
+			
+				<input type="radio" name="question1" value="Kick ">Kick 
+				<input type="radio" name="question1" value="Punch">Punch 
+				<input type="radio" name="question1" value="Bow">Bow
+				<input type="radio" name="question1" value="Uniform"  class="correctAnswer">Uniform                              <!--Correct answer-->
+
+			<h1>2. Which is not a tenet of Taekwondo?</h1>
+			
+				<input type="radio" name="question2" value="Courtesy">Courtesy
+				<input type="radio" name="question2" value="Strength" class="correctAnswer">Strength                    <!--Correct answer-->
+				<input type="radio" name="question2" value="Perseverence">Perseverence
+				<input type="radio" name="question2" value="Indomitable Spirit">Indomitable Spirit 
+
+			<h1>3. Yeodul means?</h1>
+			
+				<input type="radio" name="question3" value="Eight" class="correctAnswer">Eight                    <!--Correct answer-->
+				<input type="radio" name="question3" value="Basics">Basics
+				<input type="radio" name="question3" value="Side Kick">Side Kick 
+				<input type="radio" name="question3" value="Foot">Foot 
+
+			<h1>4. What is the color of a beginner's belt?</h1>
+			
+				<input type="radio" name="question4" value="Blue">Blue 
+				<input type="radio" name="question4" value="White" class="correctAnswer">White                              <!--Correct answer-->
+				<input type="radio" name="question4" value="Black">Black
+				<input type="radio" name="question4" value="Yellow ">Yellow 
+
+
+			<h1>5. Where did Taekwondo originate?</h1>
+			
+				<input type="radio" name="question5" value="China">China
+				<input type="radio" name="question5" value="Nigeria">Nigeria
+				<input type="radio" name="question5" value="Korea" class="correctAnswer">Korea                      <!--Correct answer-->
+				<input type="radio" name="question5" value="India">India
+			
+			<h1>6. What is a Taekwondo chest protector called in Korean?</h1>
+			
+				<input type="radio" name="question6" value="Poomsae">Poomsae
+				<input type="radio" name="question6" value="Hana">Hana
+				<input type="radio" name="question6" value="Hogu" class="correctAnswer">Hogu                                 <!--Correct answer-->
+				<input type="radio" name="question6" value="Kwon">Kwon
+				
+
+            <h1>7. What is the most frequent scoring kick in Taekwondo tournaments?</h1>
+            
+				<input type="radio" name="question7" value="Spin hook kick">Spin hook kick
+				<input type="radio" name="question7" value="Roundhouse kick" class="correctAnswer">Roundhouse kick                    <!--Correct answer-->
+				<input type="radio" name="question7" value="Jump back kick">Jump back kick
+				<input type="radio" name="question7" value="Side kick">Side kick
+
+            <h1>8. Dojang, the Korean word for training hall means:______</h1>
+            
+				<input type="radio" name="question8" value="House of discipline" class="correctAnswer">House of discipline                 <!--Correct answer-->
+				<input type="radio" name="question8" value="Practice hall">Practice hall
+				<input type="radio" name="question8" value="Fighting school">Fighting school
+				<input type="radio" name="question8" value="Battleground">Battleground
+
+            <h1>9. What does the word Taekwondo mean?</h1>
+            
+				<input type="radio" name="question9" value="The way of kicking butt and taking names">The way of kicking butt and taking names
+				<input type="radio" name="question9" value="The way of foot and fist" class="correctAnswer">The way of foot and fist          <!--Correct answer-->
+				<input type="radio" name="question9" value="The way of strategy">The way of strategy
+				<input type="radio" name="question9" value="The art of war">The art of war
+
+            <h1>10. What is a Taekwondo instructor called in Korean?</h1>
+            
+				<input type="radio" name="question10" value="Sa-Bum-nim" class="correctAnswer">Sa-Bum-nim                           <!--Correct answer-->
+				<input type="radio" name="question10" value="Taegeuk">Taegeuk
+				<input type="radio" name="question10" value="Sifu">Sifu
+				<input type="radio" name="question10" value="Sensei">Sensei
+
+				<br>
+
+			<button id = done_button>Done!</button>
+
+		</div>
+
+		<!-- End of the game -->
+		<div id = end_container>
+			<!-- Trivia Game Logo -->
+			<h1 class = "logo">Taekwondo Trivia</h1>
+
+			<h1 id = "done">You did it! Hi-Yahhh</h1>
+			<br>
+
+			<h1>Correct Answers: <span id = "correct_answers">0</span></h1>
+			<h1>Incorrect Answers: <span id = wrong_answers>0</span></h1>
+			<h1>Unanswered: <span id = "unanswered">0</span></h1>
+		</div>
+
+		<!-- Link in JavaScript -->
+		<script src="assets/javascript/game.js"></script>
+		
+	</body>
+</html>
