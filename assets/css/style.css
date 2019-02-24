@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    background-color: rgba(4, 8, 248, 0.842)
+}
+
+/* logo running outside the box when screen is too small
+fix later */
+.logo{
+    text-align: center;
+	font-size: 85px;
+	color: white;
+    font-weight: bold;
+    margin: 5% 0;
+    padding: 10px;
+}
+
+#start_container {
+	height: auto;
+    margin: 4%;
+    padding-bottom: 100px;
+    background-color: rgb(235, 4, 4);
+    border: 5px solid rgb(4, 8, 248);
+	border-radius: 30px;
+}
+
+#start_button{
+    color:rgb(4, 8, 248);
+	margin-top: 8%;
+	height: 75px;
+	width: 250px;
+    font-size: 30px;
+    border: 5px solid rgb(4, 8, 248);
+	border-radius: 30px;
+}
+
+#game_content {
+	color: white;
+	text-align: center;
+	margin: 3% 15%;
+    height: auto;
+    border: 5px solid rgb(4, 8, 248);
+	border-radius: 30px;
+	background-color: rgb(235, 4, 4);
+}
+
+#timer_line{
+	margin-bottom: 50px;
+}
+
+h1{
+	font-size: 26px;
+	margin: 30px 0 10px 0;
+}
+
+#done_button{
+    color: rgb(4, 8, 248);
+	margin: 5% 0;
+	height: 75px;
+	width: 250px;
+    font-size: 30px;
+    border: 5px solid rgb(4, 8, 248);
+	border-radius: 30px;
+}
+
+#end_container {
+	color: white;
+	height: auto;
+	padding-bottom: 50px;
+	margin: 4%;
+	background-color: rgb(235, 4, 4);
+    border: 5px solid rgb(4, 8, 248);
+	border-radius: 30px;
+}
+
+
+#done{
+	font-size: 35px;
+}
